@@ -4,12 +4,6 @@ import numpy as np
 import torch
 import joblib
 from pytorch_tabnet.tab_model import TabNetRegressor
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 0a46e7f (Déploiement app TabNet Streamlit)
 # Chargement
 
 # Charger le CSV pour obtenir les bornes des années
@@ -66,8 +60,4 @@ if st.button("Prédire"):
         else:
             montant = np.expm1(log_pred)
             montant_reel = f"{montant:,.0f} $".replace(",", " ")
-<<<<<<< HEAD
             st.success(f"Montant estimé levé : {montant_reel} (log = {log_pred:.2f})")
-=======
-            st.success(f"Montant estimé levé : {montant_reel} (log = {log_pred:.2f})")
->>>>>>> 0a46e7f (Déploiement app TabNet Streamlit)
